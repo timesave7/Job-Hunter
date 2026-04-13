@@ -37,7 +37,7 @@ CONFIG = {
     # 수신자 (테스트: 아버지만)
     "recipients": [
         "timesave7@gmail.com",
-        # "seunggy98@gmail.com",  # ← 완성 후 주석 해제
+        "seunggy98@gmail.com",
     ],
 
     # 검색 조건
