@@ -72,21 +72,19 @@ DIRECT_RSS_FEEDS = {
         ("한국경제",     "https://www.hankyung.com/feed/all-news"),
         ("조선일보",     "https://www.chosun.com/arc/outboundfeeds/rss/?outputType=xml"),
     ],
-    # ── 미국 뉴스 ──
+    # ── 미국/글로벌 뉴스 (한국 매체) ──
     "🇺🇸 미국 정치/경제": [
-        ("CNN",         "http://rss.cnn.com/rss/cnn_topstories.rss"),
-        ("CNN World",   "http://rss.cnn.com/rss/cnn_world.rss"),
-        ("CNBC",        "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114"),
-        ("NPR",         "https://feeds.npr.org/1001/rss.xml"),
-        ("BBC",         "https://feeds.bbci.co.uk/news/rss.xml"),
+        ("연합뉴스",     "https://www.yna.co.kr/rss/news.xml"),
+        ("한국경제",     "https://www.hankyung.com/feed/all-news"),
+        ("한겨레",       "https://akngs.github.io/knews-rss/publishers/hani.xml"),
+        ("조선일보",     "https://www.chosun.com/arc/outboundfeeds/rss/?outputType=xml"),
+        ("국제뉴스종합", "https://akngs.github.io/knews-rss/categories/international.xml"),
     ],
-    # ── IT / AI ──
+    # ── IT / AI (한국 매체 우선) ──
     "🤖 IT / AI 동향": [
-        ("TechCrunch AI","https://techcrunch.com/category/artificial-intelligence/feed/"),
-        ("TechCrunch",   "https://techcrunch.com/feed/"),
-        ("The Verge",    "https://www.theverge.com/rss/index.xml"),
-        ("Ars Technica", "https://feeds.arstechnica.com/arstechnica/index"),
         ("한국IT뉴스",   "https://akngs.github.io/knews-rss/categories/tech.xml"),
+        ("한국경제",     "https://www.hankyung.com/feed/all-news"),
+        ("연합뉴스",     "https://www.yna.co.kr/rss/news.xml"),
     ],
     # ── 부동산 / 지역 ──
     "🏘️ Frisco TX 부동산/개발": [
@@ -95,13 +93,12 @@ DIRECT_RSS_FEEDS = {
     ],
     # ── 스포츠 ──
     "⚽ 손흥민 / 스포츠": [
-        ("ESPN",         "https://www.espn.com/espn/rss/news"),
-        ("BBC Sport",    "https://feeds.bbci.co.uk/sport/rss.xml"),
         ("한국스포츠",    "https://akngs.github.io/knews-rss/categories/sports.xml"),
+        ("연합뉴스",     "https://www.yna.co.kr/rss/news.xml"),
     ],
     "🏌️ LPGA 한국선수": [
-        ("Golf Digest",  "https://www.golfdigest.com/feed/rss"),
-        ("Golf Channel", "https://www.golfchannel.com/rss"),
+        ("한국스포츠",    "https://akngs.github.io/knews-rss/categories/sports.xml"),
+        ("연합뉴스",     "https://www.yna.co.kr/rss/news.xml"),
     ],
     "🚗 프리미엄 신차": [
         ("MotorTrend",    "https://www.motortrend.com/feed/"),
@@ -112,11 +109,11 @@ DIRECT_RSS_FEEDS = {
 # 섹션별 키워드 필터 (관련 기사만 선별)
 SECTION_KEYWORDS = {
     "🇰🇷 한국 정치/경제": None,   # 키워드 필터 없이 전체 수집
-    "🇺🇸 미국 정치/경제": None,
-    "🤖 IT / AI 동향": None,
+    "🇺🇸 미국 정치/경제": ["미국","트럼프","바이든","워싱턴","백악관","연준","fed","달러","월가","wall","us","america","관세","무역"],
+    "🤖 IT / AI 동향": ["ai","인공지능","로봇","자율주행","스마트","반도체","칩","gpu","테슬라","엔비디아","삼성전자","애플","구글","챗gpt","클로드","llm","생성형"],
     "🏘️ Frisco TX 부동산/개발": ["frisco","texas","tx","real estate","부동산","개발","plano","mckinney","dfw","dallas"],
     "⚽ 손흥민 / 스포츠": ["son","손흥민","heung","tottenham","spurs","premier league","football","soccer"],
-    "🏌️ LPGA 한국선수": ["lpga","korean","korea","한국","ko jin","nelly korda","lpga tour","pga"],
+    "🏌️ LPGA 한국선수": ["lpga","골프","한국","korea","korean","pga","ko jin","nelly korda","이민지","김효주","전인지","양희영","고진영"],
     "🚗 프리미엄 신차": ["bmw","mercedes","porsche","genesis","audi","2026","2027","luxury","new model","electric"],
 }
  
