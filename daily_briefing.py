@@ -1,5 +1,5 @@
 """
-Dean's Daily Briefing v3.0 — 매일 오전 8시 자동 발송
+Dean's Daily Briefing v3.0a — 매일 오전 8시 자동 발송
 v3.0 변경사항:
   - 📢 뉴스 속보 섹션 추가
   - 🌍 글로벌 뉴스 섹션 추가
