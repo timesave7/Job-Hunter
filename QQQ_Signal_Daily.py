@@ -38,7 +38,7 @@ CONFIG = {
     "sender_app_password": os.environ.get("GMAIL_APP_PASSWORD", ""),
     "recipients": [
         "timesave7@gmail.com",
-        # "seunggy98@gmail.com",  # ← 아들 추가 시 주석 해제
+        "seunggy98@gmail.com",  
     ],
 }
 
