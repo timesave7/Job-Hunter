@@ -30,7 +30,7 @@ warnings.filterwarnings('ignore')
 # ─────────────────────────────────────────────
 # 설정
 # ─────────────────────────────────────────────
-CRASH_1_PCT = 0.40
+CRASH_1_PCT = 0.45
 CRASH_2_PCT = 0.20
 
 CONFIG = {
@@ -276,7 +276,7 @@ def build_signal_html(s):
                 <td style="padding:7px;text-align:right;">${s['tqqq_price']} &nbsp;({tqqq_drop:+.1f}%)</td>
             </tr>
             <tr style="border-bottom:1px solid #eee;">
-                <td style="padding:7px;color:#888;">1차 (-60%)</td>
+                <td style="padding:7px;color:#888;">1차 (-55%)</td>
                 <td style="padding:7px;text-align:right;">${s['crash_1']} → {'🎯 도달!' if crash1_hit else '미달 ✅'}</td>
             </tr>
             <tr>
@@ -340,7 +340,7 @@ def print_signal(s):
     print(f"\n  🎯 Crash Hunter")
     print(f"     TQQQ ATH:  ${s['tqqq_ath']:.2f}  ({s['tqqq_ath_date']})  ← 자동 계산")
     print(f"     현재가:    ${s['tqqq_price']:.2f}  ({tqqq_drop:+.1f}%)")
-    print(f"     1차(-60%): ${s['crash_1']:.2f}  →  {'🎯 도달!' if crash1_hit else '미달 ✅'}")
+    print(f"     1차(-55%): ${s['crash_1']:.2f}  →  {'🎯 도달!' if crash1_hit else '미달 ✅'}")
     print(f"     2차(-80%): ${s['crash_2']:.2f}  →  {'🎯 도달!' if crash2_hit else '미달 ✅'}")
 
     print(f"\n{LINE}")
