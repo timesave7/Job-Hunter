@@ -33,7 +33,7 @@ warnings.filterwarnings('ignore')
 
 # ★ 배당CF전략 핵심 파라미터
 COST_BASIS    = 43.50  # TQQQ 취득단가 — 전환 발생 시 이메일 안내에 따라 수동 업데이트
-TRIGGER_PCT   = 1.00   # 전환 트리거: 취득단가 대비 +100% (시뮬레이터 기본값과 동일)
+TRIGGER_PCT   = 0.50   # 전환 트리거: 취득단가 대비 +50%
 TRANSFER_PCT  = 0.50   # 수익분의 50%를 배당ETF로 전환
 MAX_DIV_PCT   = 0.30   # 배당ETF 최대 비중 30% (포트폴리오 대비)
 
