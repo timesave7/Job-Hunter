@@ -25,7 +25,7 @@ warnings.filterwarnings('ignore')
 CONFIG = {
     "sender_email": os.environ.get("SENDER_EMAIL",""),
     "sender_app_password": os.environ.get("GMAIL_APP_PASSWORD",""),
-    "recipients": ["timesave7@gmail.com","seunggy98@gmail.com"],
+    "recipients": ["timesave7@gmail.com"],
     "gcal_ical_url": os.environ.get("GCAL_ICAL_URL",""),
 }
 UA = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
