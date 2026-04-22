@@ -426,4 +426,5 @@ if __name__ == "__main__":
         print_signal(s)
         html = build_signal_html(s)
         send_email(html, s)
-    input("\n✅ 완료. 아무 키나 누르면 창이 닫힙니다...")
+    if not os.environ.get("GITHUB_ACTIONS"):
+        input("\n✅ 완료. 아무 키나 누르면 창이 닫힙니다...")
