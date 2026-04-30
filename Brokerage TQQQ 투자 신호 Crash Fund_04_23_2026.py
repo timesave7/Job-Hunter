@@ -65,7 +65,7 @@ CRASH_2_PCT   = 0.30   # ATH 대비 -70% → 탄약풀 40% 재투입
 CRASH_3_PCT   = 0.20   # ATH 대비 -80% → 탄약풀 잔여 20% 전액 재투입
 
 # GitHub Actions 업데이트 링크
-GITHUB_REPO        = "timesave7/Job-Hunter"
+GITHUB_REPO        = "timesave7/Dean-Automation"
 UPDATE_WORKFLOW    = "Brokerage_update_cost_basis_04_23_2026.yml"
 GITHUB_UPDATE_URL  = f"https://github.com/{GITHUB_REPO}/actions/workflows/{UPDATE_WORKFLOW}"
 
