@@ -73,6 +73,7 @@ CONFIG = {
     "sender_app_password": os.environ.get("GMAIL_APP_PASSWORD", ""),
     "recipients": [
         "seunggy98@gmail.com",
+        "timesave7@gmail.com"
     ],
 }
 
