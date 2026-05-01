@@ -1,0 +1,26 @@
+name: Dean Brokerage TQQQ Crash Fund Signal Daily
+
+on:
+  schedule:
+    - cron: '15 22 * * 1-5'   # 매일 장 마감 후 (Roth와 15분 간격)
+  workflow_dispatch:
+
+jobs:
+  signal:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install yfinance pandas
+
+      - name: Run Brokerage TQQQ CF Signal
+        env:
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
+        run: python "Dean_Brokerage TQQQ 투자 신호 Crash Fund_04_23_2026.py"

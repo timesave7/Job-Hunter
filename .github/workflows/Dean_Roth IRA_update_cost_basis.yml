@@ -1,0 +1,46 @@
+name: Update Dean Roth IRA COST_BASIS
+
+on:
+  workflow_dispatch:
+    inputs:
+      new_cost_basis:
+        description: '새 취득단가 입력 (실제 체결가, 예: 67.30)'
+        required: true
+        type: string
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update Dean_Roth IRA_state.json
+        run: |
+          python -c "
+          import json
+          from datetime import datetime
+
+          with open('Dean_Roth IRA_state.json', 'r') as f:
+              state = json.load(f)
+
+          old = state['cost_basis']
+          new = float('${{ github.event.inputs.new_cost_basis }}')
+          state['previous_basis'] = old
+          state['cost_basis'] = new
+          state['last_updated'] = datetime.now().strftime('%Y-%m-%d')
+
+          with open('Dean_Roth IRA_state.json', 'w') as f:
+              json.dump(state, f, indent=2, ensure_ascii=False)
+
+          print(f'✅ Roth IRA COST_BASIS 업데이트 완료: \${old} → \${new}')
+          "
+
+      - name: Commit & Push
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add "Dean_Roth IRA_state.json"
+          git commit -m "Update Dean Roth IRA COST_BASIS to ${{ github.event.inputs.new_cost_basis }}"
+          git push
