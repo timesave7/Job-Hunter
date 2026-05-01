@@ -1,6 +1,6 @@
 {
-  "cost_basis": 43.50,
-  "last_updated": "2026-04-21",
-  "previous_basis": null,
+  "cost_basis": 65.65,
+  "last_updated": "2026-05-01",
+  "previous_basis": 43.5,
   "note": "전환 완료 후 GitHub Actions update_cost_basis 워크플로우에서 업데이트"
 }
