@@ -2,7 +2,7 @@ name: Paul Roth IRA TQQQ Crash Fund Signal Daily
 
 on:
   schedule:
-    - cron: '0 22 * * 1-5'
+    - cron: '30 22 * * 1-5'
   workflow_dispatch:
 
 jobs:
