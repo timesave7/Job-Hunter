@@ -1,5 +1,10 @@
 {
-  "cost_basis": 65.79,
-  "previous_basis": 65.79,
-  "last_updated": "2026-05-05"
-}
+     "cost_basis": 65.79,
+     "last_updated": "2026-05-14",
+     "previous_basis": 43.50,
+     "trigger_pct": 0.30,
+     "transfer_pct": 0.30,
+     "div_etf": "QQQI",
+     "rule_version": "R3 (V2.4)",
+     "note": "V2.4 전환 (R3 룰 + QQQI). cost_basis는 마지막 매도가/체결가. 다음 트리거 = CB × 1.30."
+   }
